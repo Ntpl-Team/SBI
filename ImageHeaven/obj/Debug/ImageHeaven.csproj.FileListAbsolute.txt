@@ -1,0 +1,98 @@
+D:\Krishanu Maity\SBI\ImageHeaven\obj\Debug\ImageHeaven.csprojAssemblyReference.cache
+D:\Krishanu Maity\SBI\ImageHeaven\obj\Debug\ImageHeaven.Properties.Resources.resources
+D:\Krishanu Maity\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.GenerateResource.cache
+D:\Krishanu Maity\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.CoreCompileInputs.cache
+D:\Krishanu Maity\SBI\ImageHeaven\bin\Debug\ImageHeaven.dll.config
+D:\Krishanu Maity\SBI\ImageHeaven\bin\Debug\ImageHeaven.dll
+D:\Krishanu Maity\SBI\ImageHeaven\bin\Debug\ImageHeaven.pdb
+D:\Krishanu Maity\SBI\ImageHeaven\bin\Debug\NovaNet.Utils.dll
+D:\Krishanu Maity\SBI\ImageHeaven\bin\Debug\Interop.ClearImage.dll
+D:\Krishanu Maity\SBI\ImageHeaven\bin\Debug\NovaNet.Utils.pdb
+D:\Krishanu Maity\SBI\ImageHeaven\bin\Debug\NovaNet.Utils.dll.config
+D:\Krishanu Maity\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.CopyComplete
+D:\Krishanu Maity\SBI\ImageHeaven\obj\Debug\ImageHeaven.dll
+D:\Krishanu Maity\SBI\ImageHeaven\obj\Debug\ImageHeaven.pdb
+D:\Krishanu Maity\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmMain.resources
+D:\Krishanu Maity\SBI\ImageHeaven\bin\Debug\nControls.dll
+D:\Krishanu Maity\SBI\ImageHeaven\bin\Debug\DgvFilterPopup.dll
+D:\Krishanu Maity\SBI\ImageHeaven\bin\Debug\nControls.pdb
+D:\Krishanu Maity\SBI\ImageHeaven\obj\Debug\ImageHeaven.About.resources
+D:\Krishanu Maity\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmDataImport.resources
+D:\Krishanu Maity\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmExport.resources
+D:\SBI\ImageHeaven\bin\Debug\ImageHeaven.dll.config
+D:\SBI\ImageHeaven\bin\Debug\ImageHeaven.dll
+D:\SBI\ImageHeaven\bin\Debug\ImageHeaven.pdb
+D:\SBI\ImageHeaven\bin\Debug\nControls.dll
+D:\SBI\ImageHeaven\bin\Debug\NovaNet.Utils.dll
+D:\SBI\ImageHeaven\bin\Debug\DgvFilterPopup.dll
+D:\SBI\ImageHeaven\bin\Debug\Interop.ClearImage.dll
+D:\SBI\ImageHeaven\bin\Debug\nControls.pdb
+D:\SBI\ImageHeaven\bin\Debug\NovaNet.Utils.pdb
+D:\SBI\ImageHeaven\obj\Debug\ImageHeaven.csprojResolveAssemblyReference.cache
+D:\SBI\ImageHeaven\obj\Debug\ImageHeaven.About.resources
+D:\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmDataImport.resources
+D:\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmExport.resources
+D:\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmMain.resources
+D:\SBI\ImageHeaven\obj\Debug\ImageHeaven.Properties.Resources.resources
+D:\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.GenerateResource.Cache
+D:\SBI\ImageHeaven\obj\Debug\ImageHeaven.dll
+D:\SBI\ImageHeaven\obj\Debug\ImageHeaven.pdb
+D:\.NET\SBI\ImageHeaven\bin\Debug\ImageHeaven.dll.config
+D:\.NET\SBI\ImageHeaven\bin\Debug\ImageHeaven.dll
+D:\.NET\SBI\ImageHeaven\bin\Debug\ImageHeaven.pdb
+D:\.NET\SBI\ImageHeaven\bin\Debug\nControls.dll
+D:\.NET\SBI\ImageHeaven\bin\Debug\NovaNet.Utils.dll
+D:\.NET\SBI\ImageHeaven\bin\Debug\DgvFilterPopup.dll
+D:\.NET\SBI\ImageHeaven\bin\Debug\Interop.ClearImage.dll
+D:\.NET\SBI\ImageHeaven\bin\Debug\nControls.pdb
+D:\.NET\SBI\ImageHeaven\bin\Debug\NovaNet.Utils.pdb
+D:\.NET\SBI\ImageHeaven\bin\Debug\NovaNet.Utils.dll.config
+D:\.NET\SBI\ImageHeaven\obj\Debug\ImageHeaven.csprojAssemblyReference.cache
+D:\.NET\SBI\ImageHeaven\obj\Debug\ImageHeaven.About.resources
+D:\.NET\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmDataImport.resources
+D:\.NET\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmExport.resources
+D:\.NET\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmMain.resources
+D:\.NET\SBI\ImageHeaven\obj\Debug\ImageHeaven.Properties.Resources.resources
+D:\.NET\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.GenerateResource.cache
+D:\.NET\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.CoreCompileInputs.cache
+D:\.NET\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.CopyComplete
+D:\.NET\SBI\ImageHeaven\obj\Debug\ImageHeaven.dll
+D:\.NET\SBI\ImageHeaven\obj\Debug\ImageHeaven.pdb
+D:\.NET\SBI\ImageHeaven\bin\Debug\itextsharp.dll
+D:\.NET\SBI\ImageHeaven\bin\Debug\Syncfusion.Compression.Base.dll
+D:\.NET\SBI\ImageHeaven\bin\Debug\Syncfusion.OCRProcessor.Base.dll
+D:\.NET\SBI\ImageHeaven\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\.NET\SBI\ImageHeaven\bin\Debug\Microsoft.mshtml.dll
+D:\.NET\SBI\ImageHeaven\bin\Debug\Syncfusion.Compression.Base.xml
+D:\.NET\SBI\ImageHeaven\bin\Debug\Syncfusion.OCRProcessor.Base.xml
+D:\.NET\SBI\ImageHeaven\bin\Debug\Syncfusion.Pdf.Base.xml
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\ImageHeaven.dll.config
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\ImageHeaven.dll
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\ImageHeaven.pdb
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\itextsharp.dll
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\nControls.dll
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\NovaNet.Utils.dll
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\Syncfusion.Compression.Base.dll
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\Syncfusion.OCRProcessor.Base.dll
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\DgvFilterPopup.dll
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\Interop.ClearImage.dll
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\Microsoft.mshtml.dll
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\nControls.pdb
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\NovaNet.Utils.pdb
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\NovaNet.Utils.dll.config
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\Syncfusion.Compression.Base.xml
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\Syncfusion.OCRProcessor.Base.xml
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\bin\Debug\Syncfusion.Pdf.Base.xml
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.AssemblyReference.cache
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.About.resources
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmDataImport.resources
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmExport.resources
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmMain.resources
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.Properties.Resources.resources
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.GenerateResource.cache
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.CoreCompileInputs.cache
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.CopyComplete
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.dll
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.pdb
+D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmBatchExport.resources

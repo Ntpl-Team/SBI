@@ -1,0 +1,9 @@
+8/14/2021 8:25:40 PM
+Mailbox unavailable. The server response was: Access denied - Invalid HELO name (See RFC2821 4.1.1.1)
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at NovaNet.Utils.exLog.emailLogger.Log(Exception ex) in D:\Sandhi Software\Bzer_SBI\NovaNet\Utils\emailLogger.cs:line 83
+System
+--------End--------

@@ -1,0 +1,80 @@
+D:\Krishanu Maity\SBI\SBI\bin\Debug\SBI.exe.config
+D:\Krishanu Maity\SBI\SBI\bin\Debug\SBI.exe
+D:\Krishanu Maity\SBI\SBI\bin\Debug\SBI.pdb
+D:\Krishanu Maity\SBI\SBI\bin\Debug\ImageHeaven.dll
+D:\Krishanu Maity\SBI\SBI\bin\Debug\NovaNet.Utils.dll
+D:\Krishanu Maity\SBI\SBI\bin\Debug\Interop.ClearImage.dll
+D:\Krishanu Maity\SBI\SBI\bin\Debug\ImageHeaven.pdb
+D:\Krishanu Maity\SBI\SBI\bin\Debug\ImageHeaven.dll.config
+D:\Krishanu Maity\SBI\SBI\bin\Debug\NovaNet.Utils.pdb
+D:\Krishanu Maity\SBI\SBI\bin\Debug\NovaNet.Utils.dll.config
+D:\Krishanu Maity\SBI\SBI\obj\Debug\SBI.csprojAssemblyReference.cache
+D:\Krishanu Maity\SBI\SBI\obj\Debug\SBI.Properties.Resources.resources
+D:\Krishanu Maity\SBI\SBI\obj\Debug\SBI.csproj.GenerateResource.cache
+D:\Krishanu Maity\SBI\SBI\obj\Debug\SBI.csproj.CoreCompileInputs.cache
+D:\Krishanu Maity\SBI\SBI\obj\Debug\SBI.csproj.CopyComplete
+D:\Krishanu Maity\SBI\SBI\obj\Debug\SBI.exe
+D:\Krishanu Maity\SBI\SBI\obj\Debug\SBI.pdb
+D:\SBI\SBI\bin\Debug\SBI.exe.config
+D:\SBI\SBI\obj\Debug\SBI.exe
+D:\SBI\SBI\obj\Debug\SBI.pdb
+D:\SBI\SBI\bin\Debug\SBI.exe
+D:\SBI\SBI\bin\Debug\SBI.pdb
+D:\SBI\SBI\bin\Debug\ImageHeaven.dll
+D:\SBI\SBI\bin\Debug\NovaNet.Utils.dll
+D:\SBI\SBI\bin\Debug\Interop.ClearImage.dll
+D:\SBI\SBI\bin\Debug\ImageHeaven.pdb
+D:\SBI\SBI\bin\Debug\NovaNet.Utils.pdb
+D:\SBI\SBI\obj\Debug\SBI.csprojResolveAssemblyReference.cache
+D:\SBI\SBI\obj\Debug\SBI.Properties.Resources.resources
+D:\SBI\SBI\obj\Debug\SBI.csproj.GenerateResource.Cache
+D:\.NET\SBI\SBI\bin\Debug\SBI.exe.config
+D:\.NET\SBI\SBI\bin\Debug\SBI.exe
+D:\.NET\SBI\SBI\bin\Debug\SBI.pdb
+D:\.NET\SBI\SBI\bin\Debug\ImageHeaven.dll
+D:\.NET\SBI\SBI\bin\Debug\NovaNet.Utils.dll
+D:\.NET\SBI\SBI\bin\Debug\Interop.ClearImage.dll
+D:\.NET\SBI\SBI\bin\Debug\ImageHeaven.pdb
+D:\.NET\SBI\SBI\bin\Debug\ImageHeaven.dll.config
+D:\.NET\SBI\SBI\bin\Debug\NovaNet.Utils.pdb
+D:\.NET\SBI\SBI\bin\Debug\NovaNet.Utils.dll.config
+D:\.NET\SBI\SBI\obj\Debug\SBI.csprojAssemblyReference.cache
+D:\.NET\SBI\SBI\obj\Debug\SBI.Properties.Resources.resources
+D:\.NET\SBI\SBI\obj\Debug\SBI.csproj.GenerateResource.cache
+D:\.NET\SBI\SBI\obj\Debug\SBI.csproj.CoreCompileInputs.cache
+D:\.NET\SBI\SBI\obj\Debug\SBI.csproj.CopyComplete
+D:\.NET\SBI\SBI\obj\Debug\SBI.exe
+D:\.NET\SBI\SBI\obj\Debug\SBI.pdb
+D:\.NET\SBI\SBI\bin\Debug\itextsharp.dll
+D:\.NET\SBI\SBI\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\.NET\SBI\SBI\bin\Debug\Syncfusion.OCRProcessor.Base.dll
+D:\.NET\SBI\SBI\bin\Debug\Syncfusion.Compression.Base.dll
+D:\.NET\SBI\SBI\bin\Debug\Microsoft.mshtml.dll
+D:\.NET\SBI\SBI\bin\Debug\Syncfusion.Pdf.Base.xml
+D:\.NET\SBI\SBI\bin\Debug\Syncfusion.OCRProcessor.Base.xml
+D:\.NET\SBI\SBI\bin\Debug\Syncfusion.Compression.Base.xml
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\SBI.exe.config
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\SBI.exe
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\SBI.pdb
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\ImageHeaven.dll
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\NovaNet.Utils.dll
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\itextsharp.dll
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\Syncfusion.OCRProcessor.Base.dll
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\Interop.ClearImage.dll
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\Syncfusion.Compression.Base.dll
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\Microsoft.mshtml.dll
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\ImageHeaven.pdb
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\ImageHeaven.dll.config
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\NovaNet.Utils.pdb
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\NovaNet.Utils.dll.config
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\Syncfusion.Pdf.Base.xml
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\Syncfusion.OCRProcessor.Base.xml
+D:\Sandhi Software\SBI NEW\SBI\SBI\bin\Debug\Syncfusion.Compression.Base.xml
+D:\Sandhi Software\SBI NEW\SBI\SBI\obj\Debug\SBI.csproj.AssemblyReference.cache
+D:\Sandhi Software\SBI NEW\SBI\SBI\obj\Debug\SBI.Properties.Resources.resources
+D:\Sandhi Software\SBI NEW\SBI\SBI\obj\Debug\SBI.csproj.GenerateResource.cache
+D:\Sandhi Software\SBI NEW\SBI\SBI\obj\Debug\SBI.csproj.CoreCompileInputs.cache
+D:\Sandhi Software\SBI NEW\SBI\SBI\obj\Debug\SBI.csproj.CopyComplete
+D:\Sandhi Software\SBI NEW\SBI\SBI\obj\Debug\SBI.exe
+D:\Sandhi Software\SBI NEW\SBI\SBI\obj\Debug\SBI.pdb
