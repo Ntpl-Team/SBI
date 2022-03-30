@@ -96,3 +96,32 @@ D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.CopyComp
 D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.dll
 D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.pdb
 D:\Sandhi Software\SBI NEW\SBI\ImageHeaven\obj\Debug\ImageHeaven.frmBatchExport.resources
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\ImageHeaven.dll.config
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\ImageHeaven.dll
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\ImageHeaven.pdb
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\itextsharp.dll
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\nControls.dll
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\Syncfusion.OCRProcessor.Base.dll
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\DgvFilterPopup.dll
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\Interop.ClearImage.dll
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\Microsoft.mshtml.dll
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\nControls.pdb
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\NovaNet.Utils.pdb
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\NovaNet.Utils.dll.config
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\Syncfusion.OCRProcessor.Base.xml
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\bin\Debug\Syncfusion.Pdf.Base.xml
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.AssemblyReference.cache
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.About.resources
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.frmDataImport.resources
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.frmBatchExport.resources
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.frmExport.resources
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.frmMain.resources
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.Properties.Resources.resources
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.GenerateResource.cache
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.CoreCompileInputs.cache
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.csproj.CopyComplete
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.dll
+C:\Users\SandhiS\Desktop\GIT SBI\ImageHeaven\obj\Debug\ImageHeaven.pdb

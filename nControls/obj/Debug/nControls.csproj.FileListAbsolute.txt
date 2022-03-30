@@ -249,3 +249,17 @@ D:\Sandhi Software\SBI NEW\SBI\nControls\obj\Debug\nControls.csproj.CoreCompileI
 D:\Sandhi Software\SBI NEW\SBI\nControls\obj\Debug\nControls.csproj.CopyComplete
 D:\Sandhi Software\SBI NEW\SBI\nControls\obj\Debug\nControls.dll
 D:\Sandhi Software\SBI NEW\SBI\nControls\obj\Debug\nControls.pdb
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\bin\Debug\nControls.dll
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\bin\Debug\nControls.pdb
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.csproj.AssemblyReference.cache
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.deCheckBox.resources
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.deComboBox.resources
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.deDateBox.resources
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.deRadioButton.resources
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.deTextBox.resources
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.rptViewer.resources
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.csproj.GenerateResource.cache
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.csproj.CoreCompileInputs.cache
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.csproj.CopyComplete
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.dll
+C:\Users\SandhiS\Desktop\GIT SBI\nControls\obj\Debug\nControls.pdb

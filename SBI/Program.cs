@@ -1,5 +1,4 @@
-﻿using NovaNet.Utils;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,8 +8,6 @@ namespace SBI
 {
     public class Program
     {
-        public static NovaNet.Utils.exLog.Logger exMailLog = new NovaNet.Utils.exLog.emailLogger("./errLog.log", NovaNet.Utils.exLog.LogLevel.Dev, Constants._MAIL_TO, Constants._MAIL_FROM, Constants._SMTP);
-        public static NovaNet.Utils.exLog.Logger exTxtLog = new NovaNet.Utils.exLog.txtLogger("./errLog.log", NovaNet.Utils.exLog.LogLevel.Dev);
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -24,16 +21,14 @@ namespace SBI
             {
 
                 System.Diagnostics.Process.GetCurrentProcess().PriorityClass = System.Diagnostics.ProcessPriorityClass.RealTime;
-                exMailLog.SetNextLogger(exTxtLog);
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 //ImageHeaven.Program.IHMain(args);
 
                 Start(args);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                exMailLog.Log(ex);
             }
         }
 

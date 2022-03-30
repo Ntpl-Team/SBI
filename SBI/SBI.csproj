@@ -36,6 +36,10 @@
   <PropertyGroup>
     <ApplicationIcon>Nevaeh.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -79,10 +83,6 @@
     <ProjectReference Include="..\ImageHeaven\ImageHeaven.csproj">
       <Project>{16927039-1642-4b7f-a8d8-0d374308cb5b}</Project>
       <Name>ImageHeaven</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NovaNet\Utils\Utils.csproj">
-      <Project>{23ba0929-405a-470d-bdea-1000d9eedc3a}</Project>
-      <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

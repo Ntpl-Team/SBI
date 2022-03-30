@@ -33,7 +33,7 @@ namespace ImageHeaven
             _asm.Add("ImageHeaven");
             //_asm.Add("LItems");
             //_asm.Add("nControls");
-            _asm.Add("NovaNet.Utils");
+            //_asm.Add("NovaNet.Utils");
             //_asm.Add("NovaNet.wfe");
             //_asm.Add("TwainUtils");
             //_asm.Add("wSelect");

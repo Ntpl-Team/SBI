@@ -3,7 +3,6 @@ using System.Drawing;
 using System.Windows.Forms;
 using NovaNet.Utils;
 using System.Data;
-using System.Data.Odbc;
 using System.Collections;
 using System.IO;
 using System.Collections.Generic;
@@ -18,7 +17,6 @@ namespace ImageHeaven
         NovaNet.Utils.dbCon dbcon;
         int pos = 0;
         int posAdd = 0;
-        OdbcConnection sqlCon = null;
         DataSet ds = null;
         private double ZOOMFACTOR = 1.10;   // = 25% smaller or larger
         private int MINMAX = 5;
