@@ -40,10 +40,6 @@
     <Reference Include="itextsharp">
       <HintPath>..\SBI\bin\Debug\itextsharp.dll</HintPath>
     </Reference>
-    <Reference Include="NovaNet.Utils, Version=1.3.4.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\NovaNet.Utils.dll</HintPath>
-    </Reference>
     <Reference Include="Syncfusion.Compression.Base">
       <HintPath>..\SBI\bin\Debug\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>

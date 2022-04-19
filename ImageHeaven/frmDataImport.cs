@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using NovaNet.Utils;
 using System.Data;
 using System.Collections;
 using System.IO;
@@ -14,7 +13,7 @@ namespace ImageHeaven
     {
         MemoryStream stateLog;
         byte[] tmpWrite;
-        NovaNet.Utils.dbCon dbcon;
+        
         int pos = 0;
         int posAdd = 0;
         DataSet ds = null;
@@ -22,8 +21,6 @@ namespace ImageHeaven
         private int MINMAX = 5;
         Point mouseDown = new Point();
         private Size ImageSize = new Size(100, 200);
-        Credentials crd = new Credentials();
-        //OdbcTransaction sqlTrans = null;
         private Dictionary<string, ListViewItem> ListViewItems = new Dictionary<string, ListViewItem>();
         private Dictionary<string, ListViewItem> ListViewItems1 = new Dictionary<string, ListViewItem>();
         public frmDataImport()
@@ -133,19 +130,6 @@ namespace ImageHeaven
                 DirectoryInfo selectedPath = new DirectoryInfo(txtPath.Text);
 
 
-                //if (Path.GetFileName(txtPath.Text) == cmbBatch.Text.Trim())
-                //{
-                //    cmdImport.Enabled = true;
-                //    CmdFinalSave.Enabled = true;
-                //}
-                //else
-                //{
-
-                //    cmdImport.Enabled = false;
-                //    CmdFinalSave.Enabled = false;
-                //    MessageBox.Show(this, "Please select proper image folder", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //    return;
-                //}
                 lstPolicy.Items.Add("KYC");
                 lstPolicy.Items.Add("Income");
                 lstPolicy.Items.Add("TVR");
@@ -163,36 +147,7 @@ namespace ImageHeaven
                 lstCheckDeed.Items.Add("Others");
 
 
-                //if (Directory.Exists(txtPath.Text + "\\Backup"))
-                //{
-                //    Directory.Delete(txtPath.Text + "\\Backup", true);
-                //    Directory.CreateDirectory(txtPath.Text + "\\Backup");
-                //    DirectoryInfo selectedPath1 = new DirectoryInfo(txtPath.Text);
-                //    foreach (FileInfo file in selectedPath.GetFiles())
-                //    {
-                //        if (file.Extension == ".TIF" || file.Extension == ".tif")
-                //        {
-
-                //            file.CopyTo(txtPath.Text + "\\Backup\\" + file.Name);
-
-                //        }
-                //    }
-                //}
-                //else
-                //{
-                //    Directory.CreateDirectory(txtPath.Text + "\\Backup");
-                //    DirectoryInfo selectedPath1 = new DirectoryInfo(txtPath.Text);
-                //    foreach (FileInfo file in selectedPath.GetFiles())
-                //    {
-                //        if (file.Extension == ".TIF" || file.Extension == ".tif")
-                //        {
-
-
-                //            file.CopyTo(txtPath.Text + "\\Backup\\" + file.Name);
-
-                //        }
-                //    }
-                //}
+                
                 if (Directory.Exists(txtPath.Text + "\\Backup"))
                 {
                     Directory.Delete(txtPath.Text + "\\Backup", true);
@@ -253,8 +208,7 @@ namespace ImageHeaven
                     }
                 }
 
-                //textbox name change
-                //txtPath.Text = fbdPath.SelectedPath;
+                
                 //selectedpath change
                 selectedPath = new DirectoryInfo(txtPath.Text);
 
@@ -292,12 +246,7 @@ namespace ImageHeaven
                     pos = pos + 1;
                     //ListViewItems1.Add(fileName, lvi1);
                 }
-                //foreach (string fileName in fileNames)
-                //{
-                //    ListViewItem lvi1 = lstTotalImage.Items.Add(System.IO.Path.GetFileNameWithoutExtension(fileName));
-                //    lvi1.Tag = fileName;
-                //    ListViewItems.Add(fileName, lvi1);
-                //}
+                
                 lstImage.EndUpdate();
                 // lstTotalImage.EndUpdate();
                 if (lstPolicy.Items.Count > 0)
@@ -419,38 +368,7 @@ namespace ImageHeaven
                 {
                     lstSelImg.Items.Remove(eachItem);
                 }
-                //if (lstImage.Items.Count > 0)
-                //{
-
-                //    lstImage.Items[0].Focused = true;
-                //    lstImage.Items[0].Selected = true;
-                //    picMain.Height = 647;
-                //    picMain.Width = 625;
-                //    picMain.Refresh();
-                //    picMain.ImageLocation = null;
-                //    string imgPath = txtPath.Text + "\\" + lstImage.Items[0].Text + ".TIF";
-                //    picMain.ImageLocation = imgPath;
-
-
-                //    Image newImage = Image.FromFile(imgPath);
-                //    //picMain.Height = Convert.ToInt32(picMain.Height * 1.1);
-                //    //picMain.Width = Convert.ToInt32(picMain.Height * newImage.Width / newImage.Height);
-
-                //    picMain.SizeMode = PictureBoxSizeMode.StretchImage;
-                //    //picMain.Width = Convert.ToInt32(picMain.Width * 1);
-                //    //picMain.Height = Convert.ToInt32(picMain.Height * 1);
-                //    picMain.Refresh();
-                //    newImage.Dispose();
-                //    // GC.Collect();
-                //    //picMain.MouseWheel += new MouseEventHandler(picMain_MouseWheel);
-                //    //picMain.MouseHover += new EventHandler(picMain_MouseHover);
-                //    //lstImage.Select();
-                //}
-                //else
-                //{
-                //    picMain.ImageLocation = null;
-                //    //lstImage.Select();
-                //}
+                
                 if (lstImage.Items.Count > 0)
                 {
                     lstImage.Select();
@@ -583,7 +501,6 @@ namespace ImageHeaven
 
         private void cmdImport_Click(object sender, EventArgs e)
         {
-           // OdbcTransaction sqlTrans = null;
 
             if (cmdImport.Enabled == true)
             {
@@ -719,7 +636,6 @@ namespace ImageHeaven
                 {
                     MessageBox.Show(ex.Message.ToString());
                     lblinfo.Text = "Error...";
-                    //sqlTrans.Rollback();
                 }
             }
         }
@@ -829,11 +745,9 @@ namespace ImageHeaven
         {
             if (CmdFinalSave.Enabled == true)
             {
-                //OdbcTransaction sqlTrans = null;
                 string path = string.Empty;
                 string oldFilename = string.Empty;
                 string newFilename = string.Empty;
-               // wfeProject wfep = new wfeProject(sqlCon);
                 DirectoryInfo selectedPath = new DirectoryInfo(txtPath.Text);
                 try
                 {
@@ -846,45 +760,7 @@ namespace ImageHeaven
                         lstPolicy.Select();
                         return;
                     }
-                    //if (totImgcou > 0)
-                    //{
-                    //    DialogResult del = MessageBox.Show("There's one or more images left...Want to Delete?", "Check Again !", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                    //    if (del == DialogResult.Yes)
-                    //    {
-                    //        path = wfep.GetPath(Convert.ToInt32(cmbProject.SelectedValue.ToString())).Tables[0].Rows[0][0].ToString();
-
-                    //        string delFolder = path + "\\" + cmbBatch.Text + "\\" + "Delete";
-                    //        if (!Directory.Exists(delFolder))
-                    //        {
-                    //            Directory.CreateDirectory(delFolder);
-                    //        }
-                    //        else
-                    //        {
-                    //            Directory.Delete(delFolder);
-                    //            Directory.CreateDirectory(delFolder);
-                    //        }
-
-                    //        List<string> fileNames1 = new List<string>();
-
-
-                    //        for (int i = 0; i < lstImage.Items.Count - 1; i++)
-                    //        {
-                    //            string f = lstImage.Items[i].Text;
-                    //            string newFilename1 = delFolder + "\\" + cmbBatch.Text + "_" + (i+1).ToString().PadLeft(3, '0') + ".TIF";
-                    //            string imageName1 = cmbBatch.Text + "_" + (i+1).ToString().PadLeft(3, '0') + ".TIF";
-                    //            File.Copy(txtPath.Text + "\\" + f + ".TIF",newFilename1,true);
-                    //        }
-                    //        foreach (ListViewItem eachItem in lstImage.Items)
-                    //        {
-                    //            lstImage.Items.Remove(eachItem);
-                    //        }
-                    //    }
-                    //    else
-                    //    {
-                    //        return;
-                    //    }
-
-                    //}
+                    
                     DialogResult dr = MessageBox.Show(this, "Images are Ready to Import.Transaction Cannot be Rollback.Continue ?", "Importing Images", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                     if (dr == DialogResult.Yes)
                     {
@@ -894,9 +770,7 @@ namespace ImageHeaven
                         cmdadd1.Enabled = false;
                         cmdremove1.Enabled = false;
                         CmdFinalSave.Enabled = false;
-                        //path = wfep.GetPath(Convert.ToInt32(cmbProject.SelectedValue.ToString()), sqlTrans).Tables[0].Rows[0][0].ToString();
                         path = txtPath.Text;
-                        //sqlTrans = sqlCon.BeginTransaction();
                         if (lstCheckDeed.Items.Count > 0)
                         {
 
@@ -925,25 +799,16 @@ namespace ImageHeaven
                                             newFilename = scanFolder + "\\" + lstCheckDeed.Items[i].Text + "_" + sequence.ToString().PadLeft(5, '0') + ".TIF";
                                             string imageName = lstCheckDeed.Items[i].Text + "_" + sequence.ToString().PadLeft(5, '0') + ".TIF";
                                             File.Move(txtPath.Text + "\\" + lstTotalImage.Rows[j].Cells[0].Value.ToString() + ".TIF", newFilename);
-                                            //insertIntoDB(imageName, sequence, sqlTrans, lstCheckDeed.Items[i].Text);
                                             sequence = sequence + 1;
 
                                         }
                                     }
 
                                 }
-                                //if (UpdateCaseFile(sqlTrans, lstCheckDeed.Items[i].Text))
-                                //{
-
-                                //}
-                                //wfePolicy wfe = new wfePolicy(sqlCon, new CtrlPolicy(Convert.ToInt32(cmbProject.SelectedValue.ToString()), Convert.ToInt32(cmbBatch.SelectedValue.ToString()), "1", lstCheckDeed.Items[i].Text));
-                                //wfe.UpdateTransactionLog(eSTATES.POLICY_SCANNED, crd, sqlTrans);
                             }
                         }
 
-                        //sqlTrans.Commit();
-                        //bool updatebatch = updateBatch();
-                        //bool updatemeta = updateMeta();
+                        
                         MessageBox.Show(this, "Images Successfully Imported", "Import Images", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
@@ -955,7 +820,6 @@ namespace ImageHeaven
                 }
                 catch (Exception ex)
                 {
-                    //sqlTrans.Rollback();
                     MessageBox.Show(ex.Message.ToString());
                 }
             }
@@ -970,9 +834,7 @@ namespace ImageHeaven
         {
             if (lstPolicy.SelectedItems.Count > 0)
             {
-                //lstPolicy.Items[0].Selected = true;
-               // GetIndexDetails(lstPolicy.SelectedItems[0].Text, cmbProject.SelectedValue.ToString(), cmbBatch.SelectedValue.ToString());
-                //GetDeedVolume(lstPolicy.SelectedItems[0].Text);
+               
             }
         }
 
@@ -995,9 +857,6 @@ namespace ImageHeaven
         {
             if (lstCheckDeed.SelectedItems.Count > 0)
             {
-                //lstPolicy.Items[0].Selected = true;
-               // GetIndexDetails(lstCheckDeed.SelectedItems[0].Text, cmbProject.SelectedValue.ToString(), cmbBatch.SelectedValue.ToString());
-                //GetDeedVolume(lstCheckDeed.SelectedItems[0].Text);
             }
         }
 
@@ -1010,47 +869,13 @@ namespace ImageHeaven
         {
             MouseEventArgs mouse = e as MouseEventArgs;
 
-            //if (mouse.Button == MouseButtons.Left)
-            //{
-            //    Point mousePosNow = mouse.Location;
-
-            //    int deltaX = mousePosNow.X - mouseDown.X;
-            //    int deltaY = mousePosNow.Y - mouseDown.Y;
-
-            //    int newX = picMain.Location.X + deltaX;
-            //    int newY = picMain.Location.Y + deltaY;
-
-            //    picMain.Location = new Point(newX, newY);
-            //}
-            //lstImage.Select();
+            
         }
         
         protected override void OnMouseWheel(MouseEventArgs mea)
         {
 
-            //if (picMain.Image != null)
-            //{
-            //    if (mea.Delta > 0)
-            //    {
-            //        if ((picMain.Width < (15 * this.Width)) && (picMain.Height < (15 * this.Height)))
-            //        {
-            //            picMain.Width = (int)(picMain.Width * 1.25);
-            //            picMain.Height = (int)(picMain.Height * 1.25);
-            //        }
-            //    }
-
-            //    else
-            //    {
-            //        // Check if the pictureBox dimensions are in range (15 is the minimum and maximum zoom level)
-            //        if ((picMain.Width > (this.Width / 15)) && (picMain.Height > (this.Height / 15)))
-            //        {
-            //            // Change the size of the picturebox, divide it by the ZOOM FACTOR
-            //            picMain.Width = (int)(picMain.Width / 1.25);
-            //            picMain.Height = (int)(picMain.Height / 1.25);
-            //        }
-            //    }
-            //}
-            //picMain.Refresh();
+            
         }
         private void picMain_MouseEnter(object sender, EventArgs e)
         {

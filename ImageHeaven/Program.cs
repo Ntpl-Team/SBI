@@ -46,53 +46,7 @@ namespace ImageHeaven
                 string path = Path.GetDirectoryName(Application.ExecutablePath);
                 if ((File.Exists(path + "/prKey.snk")))
                 {
-                    string lic = Utils.Crypto.Decrypt((path + "/prKey.snk"), (path + "/EDMSLIC.ini"));
-                    lic = lic.Substring(lic.Length - 16, 16);
-                    if (lic != string.Empty)
-                    {
-                        string stDateTime = lic.Substring(0, 8);
-                        string endDateTime = lic.Substring(8, 8);
-                        string currDt = string.Empty;
-
-                        yr = stDateTime.Substring(0, 4);
-                        mn = stDateTime.Substring(4, 2);
-                        dd = stDateTime.Substring(6, 2);
-                        stDateTime = dd + "/" + mn + "/" + yr;
-
-                        yr = endDateTime.Substring(0, 4);
-                        mn = endDateTime.Substring(4, 2);
-                        dd = endDateTime.Substring(6, 2);
-                        endDateTime = dd + "/" + mn + "/" + yr;
-
-                        IFormatProvider culture = new CultureInfo("fr-Fr", true);
-                        DateTime stDt = DateTime.ParseExact(stDateTime, "dd/MM/yyyy", culture, DateTimeStyles.NoCurrentDateDefault);
-
-                        DateTime endDt = DateTime.ParseExact(endDateTime, "dd/MM/yyyy", culture, DateTimeStyles.NoCurrentDateDefault);
-
-                        //dbcon = new NovaNet.Utils.dbCon();
-                        string sqlCon = DateTime.Now.ToString("dd/MM/yyyy");
-
-                        //    //changed on 26/10/2009
-                        //    //Get current date time from database server.
-                        DateTime curDate = DateTime.ParseExact(sqlCon, "dd/MM/yyyy", culture, DateTimeStyles.NoCurrentDateDefault);
-
-
-                        if ((stDt <= curDate) && (endDt >= curDate)) // check with license date time, chnaged on 26/10/2009
-                        {
-
-                            Application.Run(new frmMain());
-                        }
-                        else
-                        {
-                            MessageBox.Show("License has been expired. Contact with nevaeh Technology");
-                            Application.Exit();
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid license. Contact with nevaeh Technology");
-                        Application.Exit();
-                    }
+                    Application.Run(new frmMain());
                 }
                 else
                 {

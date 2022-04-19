@@ -13,23 +13,11 @@ namespace ImageHeaven
 {
     public partial class frmMain : Form
     {
-        //static wItem wi;
-        //NovaNet.Utils.dbCon dbcon;
+        
         frmMain mainForm;
-        //OdbcConnection sqlCon = null;
-        //public Credentials crd;
+        
         static int colorMode;
-        //dbCon dbcon;
-
-        //
-        NovaNet.Utils.GetProfile pData;
-        NovaNet.Utils.ChangePassword pCPwd;
-        NovaNet.Utils.Profile p;
-        public static NovaNet.Utils.IntrRBAC rbc;
-        private short logincounter;
-        //
-        //OdbcTransaction txn;
-
+        
         public static string projKey;
         public static string bundleKey;
         public static string projectName = null;
@@ -65,15 +53,12 @@ namespace ImageHeaven
             width = pictureBox1.Width;
 
             int k;
-            //dbcon = new NovaNet.Utils.dbCon();
             try
             {
                 string dllPaths = string.Empty;
 
                 menuStrip1.Visible = true;
-                //toolStrip1.Visible = false;
-
-
+                
 
                 AssemblyName assemName = Assembly.GetExecutingAssembly().GetName();
                 this.Text = "B'Zer - SBI" + "           Version: " + assemName.Version.ToString();

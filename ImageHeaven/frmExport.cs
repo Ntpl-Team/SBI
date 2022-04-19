@@ -1,6 +1,5 @@
 ﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
-using NovaNet.Utils;
 using Syncfusion.OCRProcessor;
 using Syncfusion.Pdf;
 using Syncfusion.Pdf.Graphics;
@@ -23,51 +22,32 @@ namespace ImageHeaven
         public static string temp;
         MemoryStream stateLog;
         byte[] tmpWrite;
-        NovaNet.Utils.dbCon dbcon;
-        //OdbcConnection sqlCon = null;
-        //eSTATES[] state;
-        //wfeProject tmpProj = null;
-        //SqlConnection sqls = null;
+        
         DataSet ds = null;
         DataTable dsexport = new DataTable();
         string batchCount;
-        //private OdbcDataAdapter sqlAdap = null;
-        //OdbcTransaction txn = null;
-
-
+        
         public static string batchKey = null;
         public static string projKey = null;
 
         public string err = null;
         //wfeBox box = null;
         string sqlFileName = null;
-        //CtrlPolicy ctrPol = null;
-        //		CtrlPolicy ctrlPolicy = null;
-        //wfePolicy policy = null;
-        //wfePolicy wPolicy = null;
-        //CtrlPolicy pPolicy = null;
-        //CtrlImage pImage = null;
-        //wfeImage wImage = null;
-        //wfeBatch wBatch = null;
-        //private udtPolicy policyData = null;
+        
         StreamWriter sw;
         StreamWriter expLog;
-        FileorFolder exportFile;
+        
         string error = null;
         string sqlIp = null;
-        string exportPath = null;
         string globalPath = string.Empty;
         string[] imageName;
         string[] imageWithDocName;
         string[] imageNameWithoutDoc;
-        Credentials crd = new Credentials();
+        
         private long expImageCount = 0;
         private long expPolicyCount = 0;
-        //private CtrlBox pBox = null;
-        public static NovaNet.Utils.exLog.Logger exMailLog = new NovaNet.Utils.exLog.emailLogger("./errLog.log", NovaNet.Utils.exLog.LogLevel.Dev, Constants._MAIL_TO, Constants._MAIL_FROM, Constants._SMTP);
-        public static NovaNet.Utils.exLog.Logger exTxtLog = new NovaNet.Utils.exLog.txtLogger("./errLog.log", NovaNet.Utils.exLog.LogLevel.Dev);
-        //public Imagery img;
-        private ImageConfig config = null;
+        
+        
 
         public frmExport()
         {
@@ -77,21 +57,8 @@ namespace ImageHeaven
             //
             InitializeComponent();
             this.Text = "Export ";
-            exMailLog.SetNextLogger(exTxtLog);
-            ReadINI();
         }
-        private void ReadINI()
-        {
-            string iniPath = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Configuration.ini";
-            if (File.Exists(iniPath))
-            {
-                NovaNet.Utils.INIFile ini = new NovaNet.Utils.INIFile();
-                sqlIp = ini.ReadINI("SQLSERVERIP", "IP", "", iniPath);
-                sqlIp = sqlIp.Replace("\0", "").Trim();
-                exportPath = ini.ReadINI("EXPORTPATH", "SQLDBEXPORTPATH", "", iniPath);
-                exportPath = exportPath.Replace("\0", "").Trim();
-            }
-        }
+        
         private void frmExport_Load(object sender, EventArgs e)
         {
             //populateProject();
@@ -151,61 +118,7 @@ namespace ImageHeaven
                     label3.Visible = false;
                     lbldeedCount.Visible = false;
                 }
-                //if (Path.GetFileName(txtPath.Text) == cmbBatch.Text.Trim())
-                //{
-                //    cmdImport.Enabled = true;
-                //    CmdFinalSave.Enabled = true;
-                //}
-                //else
-                //{
-
-                //    cmdImport.Enabled = false;
-                //    CmdFinalSave.Enabled = false;
-                //    MessageBox.Show(this, "Please select proper image folder", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //    return;
-                //}
-
-
-
-                //lstCheckDeed.Items.Add("KYC");
-                //lstCheckDeed.Items.Add("Income");
-                //lstCheckDeed.Items.Add("TVR");
-                //lstCheckDeed.Items.Add("Property");
-                //lstCheckDeed.Items.Add("Executed_loan");
-                //lstCheckDeed.Items.Add("PSS_reports");
-                //lstCheckDeed.Items.Add("Others");
-
-
-                //if (Directory.Exists(txtPath.Text + "\\Backup"))
-                //{
-                //    Directory.Delete(txtPath.Text + "\\Backup", true);
-                //    Directory.CreateDirectory(txtPath.Text + "\\Backup");
-                //    DirectoryInfo selectedPath1 = new DirectoryInfo(txtPath.Text);
-                //    foreach (FileInfo file in selectedPath.GetFiles())
-                //    {
-                //        if (file.Extension == ".TIF" || file.Extension == ".tif")
-                //        {
-
-                //            file.CopyTo(txtPath.Text + "\\Backup\\" + file.Name);
-
-                //        }
-                //    }
-                //}
-                //else
-                //{
-                //    Directory.CreateDirectory(txtPath.Text + "\\Backup");
-                //    DirectoryInfo selectedPath1 = new DirectoryInfo(txtPath.Text);
-                //    foreach (FileInfo file in selectedPath.GetFiles())
-                //    {
-                //        if (file.Extension == ".TIF" || file.Extension == ".tif")
-                //        {
-
-
-                //            file.CopyTo(txtPath.Text + "\\Backup\\" + file.Name);
-
-                //        }
-                //    }
-                //}
+                
 
 
                 //textbox name change
@@ -213,53 +126,7 @@ namespace ImageHeaven
                 //selectedpath change
                 selectedPath = new DirectoryInfo(txtPath.Text);
 
-                //if (selectedPath.GetFiles().Length > 0)
-
-                //    foreach (FileInfo file in selectedPath.GetFiles())
-                //    {
-                //        if (file.Extension.Equals(".tif") || file.Extension.Equals(".TIF"))
-                //        {
-                //            fileNames.Add(file.FullName);
-                //            tempPath.Add(txtPath.Text + "\\" + file.ToString());
-                //        }
-                //    }
-
-
-
-                //lvwItem.SubItems.Add(CLAIMS.ToString());
-                //lvwItem.SubItems.Add("0");
-                //ListViewItems.Clear();
-                //ListViewItems1.Clear();
-                //lstImage.Items.Clear();
-
-                ////lstTotalImage.Items.Clear();
-                //lstImage.BeginUpdate();
-                //lstTotalImage.BeginUpdate();
-
-                //foreach (string fileName in fileNames)
-                //{
-
-                //    ListViewItem lvi = lstImage.Items.Add(System.IO.Path.GetFileNameWithoutExtension(fileName));
-                //    //ListViewItem lvi1 = lstTotalImage.Items.Add(System.IO.Path.GetFileNameWithoutExtension(fileName));
-                //    lvi.Tag = fileName;
-                //    //lvi1.Tag = fileName;
-                //    ListViewItems.Add(fileName, lvi);
-                //    lstTotalImage.Rows.Add();
-                //    lstTotalImage.Rows[pos].Cells[0].Value = System.IO.Path.GetFileNameWithoutExtension(fileName);
-
-                //    pos = pos + 1;
-                //    //ListViewItems1.Add(fileName, lvi1);
-                //}
-                //foreach (string fileName in fileNames)
-                //{
-                //    ListViewItem lvi1 = lstTotalImage.Items.Add(System.IO.Path.GetFileNameWithoutExtension(fileName));
-                //    lvi1.Tag = fileName;
-                //    ListViewItems.Add(fileName, lvi1);
-                //}
-
-
-
-                //lstImage.Select();
+                
             }
 
             catch (Exception ex)
@@ -331,62 +198,39 @@ namespace ImageHeaven
             cleargrid();
 
             int holdDeed = 0;
-            //dbcon = new NovaNet.Utils.dbCon();
-
-            //string file = dgvbatch.CurrentRow.Cells[1].Value.ToString();
-            //projKey = proj_key;
-            //batchKey = batch_key;
-            //DataTable dt = new DataTable();
+            
             dsexport = GetExportableDeed(file);
 
             if (dsexport.Rows.Count > 0)
             {
                 dgvexport.DataSource = dsexport;
                 dgvexport.Columns[0].Width = 220;
-                //dgvexport.Columns[1].Visible = false;
-                //dgvexport.Columns[2].Visible = false;
-                //dgvexport.Columns[3].Visible = false;
-                //dgvexport.Columns[4].Visible = true;
-                //dgvexport.Columns[5].Visible = false;
+                
             }
 
             label6.Visible = true;
             lblBatchSelected.Visible = true;
             lblBatchSelected.Text = dsexport.Rows.Count.ToString();
 
-            //lbldeedCount.Text = dgvexport.Rows.Count.ToString();
-
-            // btnExport.Enabled = true;
         }
         public DataTable GetExportableDeed(string file)
         {
-            string sqlStr = null;
             DataTable dsBox = new DataTable();
-            //OdbcDataAdapter sqlAdap = null;
-
-            //image_master merge
+            
             string filePath = txtPath.Text + "\\" + file;
             dsBox.Columns.Add("Doc Type");
             try
             {
 
-                //foreach (var info in Directory.GetFiles(filePath))
-                //{
-                //    string dir = Path.GetFileName(info);
-
+                
                 dsBox.Rows.Add(file);
 
-                //}
-                //sqlAdap = new OdbcDataAdapter(sqlStr, sqlCon);
-                //sqlAdap.Fill(dsBox);
+                
             }
             catch (Exception ex)
             {
-                //sqlAdap.Dispose();
                 stateLog = new System.IO.MemoryStream();
-                tmpWrite = new System.Text.ASCIIEncoding().GetBytes(sqlStr + "\n");
                 stateLog.Write(tmpWrite, 0, tmpWrite.Length);
-                exMailLog.Log(ex);
             }
             return dsBox;
         }
@@ -415,25 +259,13 @@ namespace ImageHeaven
                 bool isDeleted = false;
                 int MaxExportCount = 0;
                 int StatusStep = 0;
-                //config = new ImageConfig(ihConstants.CONFIG_FILE_PATH);
-                //expFolder = config.GetValue(ihConstants.EXPORT_FOLDER_SECTION, ihConstants.EXPORT_FOLDER_KEY).Trim();
-                //int len = expFolder.IndexOf('\0');
-                //expFolder = expFolder.Substring(0, len);
-                //List<DeedImageDetails> dList = new List<DeedImageDetails>();
-
+                
 
                 lblFinalStatus.Text = "Please wait while Validating....  ";
                 Application.DoEvents();
                 if (dgvbatch.Rows.Count > 0)
                 {
-                    //for (int x = 0; x < dgvbatch.Rows.Count; x++)
-                    //{
-                    //    //if (dgvbatch.Rows[x].Cells[0].Value))
-                    //    //{
-                    //    //    StatusStep = StatusStep + 1;
-                    //    //    dgvbatch.Rows[x].Selected = false; 
-                    //    //}
-                    //}
+                    
                     StatusStep = dgvbatch.Rows.Count;
 
                     int step = 100 / StatusStep;
@@ -455,20 +287,7 @@ namespace ImageHeaven
                         //populateDeeds(dgvbatch.Rows[z].Cells[2].Value.ToString(), dgvbatch.Rows[z].Cells[3].Value.ToString());
                         //string file = dgvbatch.Rows[z].Cells[1].Value.ToString();
                         populateDeeds(dgvbatch.Rows[z].Cells[1].Value.ToString());
-                        //MaxExportCount = wPolicy.getMaxExportCount(cmbProject.SelectedValue.ToString(), dgvbatch.Rows[z].Cells[2].Value.ToString());
-                        //if (dgvexport.Rows.Count > 0)
-                        //{
-                        //    for (int i = 0; i < dgvexport.Rows.Count; i++)
-                        //    {
-                        //        if (Convert.ToInt32(dgvexport.Rows[i].Cells["status"].Value.ToString()) == 30 || Convert.ToInt32(dgvexport.Rows[i].Cells["status"].Value.ToString()) == 21)
-                        //        {
-                        //            dgvexport.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                        //            MessageBox.Show("There is some Problem in one or more files, Please Check and Retry..., Export Failed");
-                        //            btnExport.Enabled = true;
-                        //            return;
-                        //        }
-                        //    }
-                        //}
+                        
 
                         if (dgvexport.Rows.Count > 0)
                         {
@@ -478,25 +297,19 @@ namespace ImageHeaven
                             progressBar1.Step = i1;
                             progressBar1.Increment(i1);
                             Application.DoEvents();
-                            //wBatch = new wfeBatch(sqlCon);
                             batchPath = txtPath.Text + "\\" + dgvbatch.Rows[z].Cells[1].Value.ToString(); //GetPath(Convert.ToInt32(cmbProject.SelectedValue.ToString()), Convert.ToInt32(dgvbatch.Rows[z].Cells[3].Value.ToString()));
                             //batchPath = batchPath + "\\1\\Nevaeh";
 
                             for (int x = 0; x < dsexport.Rows.Count; x++)
                             {
 
-                                //DeedImageDetails imgDetails = new DeedImageDetails();
-                                //wfeImage tmpBox = new wfeImage(sqlCon);
+                                
                                 DataTable dsimage = new DataTable();
                                 Application.DoEvents();
                                 lbl.Text = "Validating :" + dgvbatch.Rows[z].Cells[1].Value.ToString();
                                 Application.DoEvents();
                                 string aa = txtPath.Text + "\\" + dgvbatch.Rows[z].Cells[1].Value.ToString(); //GetPath(Convert.ToInt32(cmbProject.SelectedValue.ToString()), Convert.ToInt32(dgvbatch.Rows[z].Cells[3].Value.ToString()));
                                 sqlFileName = dsexport.Rows[x][0].ToString();
-                                //int index = sqlFileName.IndexOf('[');
-                                //sqlFileName = sqlFileName.Substring(0, index);
-                                //batchName = sqlFileName.Substring(0, index);
-                                //batchName = batchName + dsexport.Tables[0].Rows[x][9].ToString() + "_" + MaxExportCount.ToString();
                                 sqlFileName = sqlFileName + ".mdf";
                                 //dsimage = GetAllExportedImage(dsexport.Tables[0].Rows[x][1].ToString(), dsexport.Tables[0].Rows[x][2].ToString(), dsexport.Tables[0].Rows[x][3].ToString(), dsexport.Tables[0].Rows[x][0].ToString());
                                 dsimage = GetAllExportedImage(dsexport.Rows[x][0].ToString());
@@ -510,7 +323,6 @@ namespace ImageHeaven
                                 {
                                     for (int a = 0; a < dsimage.Rows.Count; a++)
                                     {
-                                        //                                        imageName[a] = dsexport.Tables[0].Rows[x][4].ToString() + "\\QC" + "\\" + dsimage.Tables[0].Rows[a]["page_name"].ToString();
                                         imageName[a] = aa + "\\" + dsimage.Rows[a][0].ToString();
                                     }
 
@@ -554,11 +366,7 @@ namespace ImageHeaven
                 btnExport.Enabled = true;
                 progressBar2.Increment(100);
                 progressBar1.Increment(100);
-                //dgvexport.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                //for (int i = 0; i < dgvbatch.Rows.Count; i++)
-                //{
-                //    dgvbatch.Rows[i].DefaultCellStyle.BackColor = Color.White;
-                //}
+                
             }
 
 
@@ -569,19 +377,12 @@ namespace ImageHeaven
         }
         public DataTable GetAllExportedImage(string filename)
         {
-            string sqlStr = null;
             DataTable dsImage = new DataTable();
-            // OdbcDataAdapter sqlAdap = null;
+            
             string indexPageName = string.Empty;
 
-            //sqlStr = "select page_index_name,status,page_name,doc_type from image_master " +
-            //        " where proj_key ='" + proj_key + "'" +
-            //    " and batch_key ='" + batch_key + "' " +
-            //    " and status <> 29 and policy_number ='" + filename + "' group by doc_type order by serial_no";
+           
 
-            //OdbcDataAdapter sqlAdap = null;
-
-            //image_master merge
             string filePath = txtPath.Text + "\\" + filename;
             dsImage.Columns.Add("Images");
             try
@@ -594,12 +395,10 @@ namespace ImageHeaven
                     dsImage.Rows.Add(dir);
 
                 }
-                //sqlAdap = new OdbcDataAdapter(sqlStr, sqlCon);
-                //sqlAdap.Fill(dsBox);
+               
             }
             catch (Exception ex)
             {
-                //sqlAdap.Dispose();
                 MessageBox.Show(ex.Message);
             }
             return dsImage;
@@ -644,10 +443,7 @@ namespace ImageHeaven
                 Builder1.Append(PropEx.Rows.Count.ToString());
                 Builder1.Append(",");
 
-                //int len = expFolder.IndexOf('\0');
-                //expFolder = expFolder.Substring(0, len);
-                //List<DeedImageDetails> dList = new List<DeedImageDetails>();
-
+                
 
                 lblFinalStatus.Text = "Please wait while Exporting....  ";
                 Application.DoEvents();
@@ -688,10 +484,7 @@ namespace ImageHeaven
                             progressBar1.Step = i1;
                             progressBar1.Increment(i1);
                             Application.DoEvents();
-                            //wBatch = new wfeBatch(sqlCon);
                             batchPath = txtPath.Text + "\\" + dgvbatch.Rows[z].Cells[1].Value.ToString();
-                            //batchPath = batchPath + "\\1\\Nevaeh";
-
 
                             if (!Directory.Exists(expFolder + "\\Nevaeh\\" + DirName))
                             {
@@ -739,12 +532,7 @@ namespace ImageHeaven
                                         //Directory.CreateDirectory(expFolder + "\\Nevaeh\\" + DirName + "\\" + fileName);
                                         isDeleted = true;
                                     }
-                                    //if (!Directory.Exists(expFolder + "\\Nevaeh\\" + DirName + "\\" + fileName))
-                                    //{
-                                    //    //Directory.CreateDirectory(expFolder + "\\Export\\" + cmbBatch.Text);
-                                    //    Directory.CreateDirectory(expFolder + "\\Nevaeh\\" + DirName + "\\" + fileName);
-                                    //    isDeleted = true;
-                                    //}
+                                    
 
                                     //doctype
 
@@ -781,28 +569,9 @@ namespace ImageHeaven
                                             //image.Alignment = Image.ALIGN_LEFT;
                                             image.SetAbsolutePosition(0, 0);
                                             image.ScaleAbsolute(iTextSharp.text.PageSize.A4.Width, iTextSharp.text.PageSize.A4.Height);
-                                            //if (image.Height > image.Width)
-                                            //    {
-                                            //        //Maximum height is 800 pixels.
-                                            //        float percentage = 0.0f;
-                                            //        percentage = 700 / image.Height;
-                                            //    image.ScalePercent(percentage * 100);
-                                            //    }
-                                            //    else
-                                            //    {
-                                            //        //Maximum width is 600 pixels.
-                                            //        float percentage = 0.0f;
-                                            //        percentage = 540 / image.Width;
-                                            //    image.ScalePercent(percentage * 100);
-                                            //    }
-
-                                            //pic.Border = iTextSharp.text.Rectangle.BOX;
-                                            //pic.BorderColor = iTextSharp.text.BaseColor.BLACK;
-                                            //pic.BorderWidth = 3f;
-                                            //document.Add(pic);
+                                            
                                             doc.Add(image);
                                             doc.NewPage();
-                                            //htmlparser.Parse(sr);
                                         }
                                         doc.Close();
                                         writer1.Close();
@@ -982,186 +751,7 @@ namespace ImageHeaven
 
 
 
-                                    //all
-                                    //for (int w = 0; w < dsimageWithoutDoc.Tables[0].Rows.Count; w++)
-                                    //{
-                                    //    expFolder = "C:\\";
-
-
-                                    //    imageNameWithoutDoc[w] = aa + "\\" + fileName + "\\QC" + "\\" + dsimageWithoutDoc.Tables[0].Rows[w]["page_index_name"].ToString();
-
-                                    //}
-                                    //new pdf
-
-                                    //if (imageNameWithoutDoc.Length != 0)
-                                    //{
-
-
-                                    //    if (img.TifToPdf(imageNameWithoutDoc, 80, expFolder + "\\Nevaeh\\" + cmbBatch.Text + "\\" + fileName + "\\" + fileName + ".pdf") == true)
-                                    //    {
-
-                                    //        string pdf_path = expFolder + "\\Nevaeh\\" + cmbBatch.Text + "\\" + fileName + "\\" + fileName + ".pdf";
-                                    //        file = fileName + ".pdf";
-                                    //        string dirname = Path.GetDirectoryName(pdf_path);
-                                    //        //PdfDocument document = new PdfDocument(PdfPage.PAGE.ToPdf,PdfImage.BEST_COMPRESSION);
-                                    //        PdfReader pdfReader = new PdfReader(pdf_path);
-                                    //        int noofpages = pdfReader.NumberOfPages;
-
-                                    //        List<string> fileNames = new List<string>();
-
-                                    //        iTextSharp.text.Document document = new iTextSharp.text.Document();
-
-                                    //        //ocr directory create
-                                    //        string dirEx = dirname + "\\OCR";
-                                    //        if (!Directory.Exists(dirEx))
-                                    //        {
-                                    //            Directory.CreateDirectory(dirEx);
-                                    //        }
-
-                                    //        //split pdf
-                                    //        for (int i = 0; i < noofpages; i++)
-                                    //        {
-                                    //            using (MemoryStream ms = new MemoryStream())
-                                    //            {
-                                    //                PdfLoadedDocument loadedDocument = new PdfLoadedDocument(pdf_path);
-                                    //                Syncfusion.Pdf.PdfDocument documentPage = new Syncfusion.Pdf.PdfDocument();
-                                    //                documentPage.ImportPage(loadedDocument, i);
-                                    //                documentPage.Save(dirEx + "\\OCR_" + i + ".pdf");
-                                    //                string filenameNew = dirEx + "\\OCR_" + i + ".pdf";
-                                    //                //documentPage.Close();
-                                    //                documentPage.Close(true);
-                                    //                //documentPage.Dispose();
-                                    //                //loadedDocument.Close();
-                                    //                loadedDocument.Close(true);
-                                    //                //loadedDocument.Dispose();
-                                    //                documentPage.EnableMemoryOptimization = true;
-                                    //                loadedDocument.EnableMemoryOptimization = true;
-                                    //                fileNames.Add(filenameNew);
-                                    //                //lstImage.Items.Add(filenameNew);
-
-                                    //                ms.Close();
-
-                                    //                GC.Collect();
-                                    //                GC.WaitForPendingFinalizers();
-                                    //                GC.Collect();
-
-                                    //                Application.DoEvents();
-                                    //            }
-                                    //            Application.DoEvents();
-                                    //        }
-
-                                    //        string expath = Path.GetDirectoryName(Application.ExecutablePath);
-                                    //        //ocr
-                                    //        try
-                                    //        {
-                                    //            System.IO.DirectoryInfo di3 = new DirectoryInfo(dirEx);
-                                    //            foreach (string filename in fileNames)
-                                    //            {
-                                    //                Application.DoEvents();
-                                    //                string xyz = filename;
-                                    //                //PdfLoadedDocument loadedDocument = new PdfLoadedDocument(pdf_path);
-                                    //                //Syncfusion.Pdf.PdfDocument documentPage = new Syncfusion.Pdf.PdfDocument();
-                                    //                //documentPage.ImportPage(loadedDocument, i);
-                                    //                using (OCRProcessor oCR = new OCRProcessor(expath + "\\TesseractBinaries\\3.02\\"))
-                                    //                {
-                                    //                    try
-                                    //                    {
-
-                                    //                        PdfLoadedDocument pdfLoadedDocument = new PdfLoadedDocument(xyz);
-
-                                    //                        oCR.Settings.Language = Syncfusion.OCRProcessor.Languages.English;
-
-                                    //                        oCR.PerformOCR(pdfLoadedDocument, expath + "\\tessdata\\", true);
-
-                                    //                        pdfLoadedDocument.EnableMemoryOptimization = true;
-
-                                    //                        pdfLoadedDocument.Save(xyz);
-
-                                    //                        pdfLoadedDocument.Close(true);
-
-                                    //                        oCR.Dispose();
-
-                                    //                        GC.Collect();
-                                    //                        GC.WaitForPendingFinalizers();
-                                    //                        GC.Collect();
-                                    //                    }
-                                    //                    catch (Exception)
-                                    //                    { continue; }
-                                    //                }
-
-                                    //            }
-                                    //            string outFile = expFolder + "\\Nevaeh\\" + cmbBatch.Text + "\\" + fileName + "\\" + fileName + ".pdf";
-                                    //            try
-                                    //            {
-                                    //                //create newFileStream object which will be disposed at the end
-                                    //                using (FileStream newFileStream = new FileStream(outFile, FileMode.Create))
-                                    //                {
-                                    //                    Application.DoEvents();
-                                    //                    // step 2: we create a writer that listens to the document
-                                    //                    PdfCopy writer = new PdfCopy(document, newFileStream);
-                                    //                    if (writer == null)
-                                    //                    {
-                                    //                        return;
-                                    //                    }
-
-                                    //                    // step 3: open the document
-                                    //                    document.Open();
-
-                                    //                    foreach (string filename in fileNames)
-                                    //                    {
-                                    //                        Application.DoEvents();
-                                    //                        string xyz = filename;
-                                    //                        // create a reader for a certain document
-                                    //                        PdfReader reader = new PdfReader(xyz);
-                                    //                        reader.ConsolidateNamedDestinations();
-
-                                    //                        // step 4: add content
-                                    //                        for (int i = 1; i <= reader.NumberOfPages; i++)
-                                    //                        {
-                                    //                            PdfImportedPage page = writer.GetImportedPage(reader, i);
-                                    //                            writer.AddPage(page);
-                                    //                        }
-
-                                    //                        PRAcroForm form = reader.AcroForm;
-                                    //                        if (form != null)
-                                    //                        {
-                                    //                            writer.CopyAcroForm(reader);
-                                    //                        }
-
-                                    //                        reader.Close();
-                                    //                    }
-
-                                    //                    // step 5: close the document and writer
-                                    //                    writer.Close();
-                                    //                    document.Close();
-
-                                    //                    GC.Collect();
-                                    //                    GC.WaitForPendingFinalizers();
-                                    //                    GC.Collect();
-                                    //                }//disposes the newFileStream object
-
-                                    //                Directory.Delete(dirEx, true);
-
-                                    //                //MessageBox.Show("OCR Completed Successfully ...");
-                                    //            }
-                                    //            catch (Exception ex)
-                                    //            {
-                                    //                MessageBox.Show(ex.ToString());
-                                    //            }
-                                    //        }
-                                    //        catch (Exception ex1)
-                                    //        { MessageBox.Show(ex1.ToString()); }
-
-
-                                    //    }
-                                    //    else
-                                    //    {
-                                    //        MessageBox.Show("There is a problem in one or more pages of File No: " + IMGName + "\n The error is: " + img.GetError());
-                                    //        return;
-                                    //    }
-
-                                    //}
-
+                                   
                                 }
 
 
@@ -1169,19 +759,7 @@ namespace ImageHeaven
                                 Application.DoEvents();
                                 progressBar2.PerformStep();
                                 Application.DoEvents();
-                                //ChangeStatus(cmbBatch.SelectedValue.ToString());
-
-
-
-
-                                //metadata_entry status update to Exported
-                                //UpdateMetaStatus(dgvexport.Rows[x].Cells[1].Value.ToString(), dgvexport.Rows[x].Cells[2].Value.ToString(), dgvexport.Rows[x].Cells[0].Value.ToString());
-
-
-                                // InsertExportLog(cmbProject.SelectedValue.ToString(), dgvbatch.Rows[z].Cells[2].Value.ToString(), crd, MaxExportCount);
-                                // pBox = new CtrlBox(Convert.ToInt32(cmbProject.SelectedValue.ToString()), Convert.ToInt32(dgvbatch.Rows[z].Cells[2].Value.ToString()), "1");
-                                // wfeBox box = new wfeBox(sqlCon, pBox);
-                                //box.UpdateStatus(eSTATES.BOX_EXPORTED);
+                                
 
                                 sqlFileName = string.Empty;
                                 txtMsg.Text = resultMsg;
@@ -1190,18 +768,7 @@ namespace ImageHeaven
 
                         }
                     }
-                    //lbl.Text = "Generating CSV....";
-
-                    ////casv creation
-                    //dgvdeedDetails.DataSource = GetAllDeedEX(cmbProject.SelectedValue.ToString(), cmbBatch.SelectedValue.ToString());
-                    //if (!Directory.Exists(expFolder + "\\Nevaeh\\" + cmbBatch.Text))
-                    //{
-                    //    Directory.CreateDirectory(expFolder + "\\Nevaeh\\" + cmbBatch.Text);
-                    //}
-                    //tabTextFile(dgvdeedDetails, expFolder + "\\Nevaeh\\" + cmbBatch.Text + "\\" + cmbBatch.Text + ".csv");
-                    //UpdateBatchStatus(cmbProject.SelectedValue.ToString(), cmbBatch.SelectedValue.ToString());
-                    //
-                    // updateVolumeStatus();
+                    
                     progressBar1.Value = 100;
                     lblFinalStatus.Text = "Finished....";
                     lbl.Text = "Finished....";
