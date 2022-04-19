@@ -82,17 +82,13 @@ C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\SBI.exe.config
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\SBI.exe
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\SBI.pdb
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\ImageHeaven.dll
-C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\NovaNet.Utils.dll
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\itextsharp.dll
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\Syncfusion.Pdf.Base.dll
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\Syncfusion.OCRProcessor.Base.dll
-C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\Interop.ClearImage.dll
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\Syncfusion.Compression.Base.dll
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\Microsoft.mshtml.dll
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\ImageHeaven.pdb
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\ImageHeaven.dll.config
-C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\NovaNet.Utils.pdb
-C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\NovaNet.Utils.dll.config
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\Syncfusion.Pdf.Base.xml
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\Syncfusion.OCRProcessor.Base.xml
 C:\Users\SandhiS\Desktop\GIT SBI\SBI\bin\Debug\Syncfusion.Compression.Base.xml
