@@ -28,9 +28,7 @@ namespace ImageHeaven
             string mn;
             string dd;
             string qry = string.Empty;
-            //NovaNet.Utils.dbCon dbcon;
-
-            //txtLogger txLog = new txtLogger(Path.GetDirectoryName(Application.ExecutablePath), LogLevel.Beta);
+            
             try
             {
                 Application.EnableVisualStyles();
